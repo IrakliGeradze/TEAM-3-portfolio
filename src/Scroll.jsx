@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 
-function Scroll({ children, className = '', style = {}, threshold = 0.2 }) {
+function scroll({ children, className = '', style = {}, threshold = 0.2 }) {
     const [isVisible, setIsVisible] = useState(false)
     const ref = useRef(null)
     useEffect(() => {
@@ -37,4 +37,4 @@ function Scroll({ children, className = '', style = {}, threshold = 0.2 }) {
     )
 }
 
-export default Scroll
+export default scroll
